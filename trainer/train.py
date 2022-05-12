@@ -14,7 +14,9 @@ import numpy as np
 from utils import CTCLabelConverter, AttnLabelConverter, Averager
 from dataset import hierarchical_dataset, AlignCollate, Batch_Balanced_Dataset
 from model import Model
-from test import validation
+from testing import validation
+#from .test import validation
+#from test import validation
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def count_parameters(model):
@@ -45,7 +47,7 @@ def train(opt, show_number = 2, amp=False):
     valid_loader = torch.utils.data.DataLoader(
         valid_dataset, batch_size=min(32, opt.batch_size),
         shuffle=True,  # 'True' to check training progress with validation function.
-        num_workers=int(opt.workers), prefetch_factor=512,
+        num_workers=int(opt.workers), prefetch_factor=int(opt.prefetch_factor), 
         collate_fn=AlignCollate_valid, pin_memory=True)
     log.write(valid_dataset_log)
     print('-' * 80)
@@ -259,7 +261,7 @@ def train(opt, show_number = 2, amp=False):
                 
                 #show_number = min(show_number, len(labels))
                 
-                start = random.randint(0,len(labels) - show_number )    
+                start = random.randint(0,len(labels) - show_number ) 
                 for gt, pred, confidence in zip(labels[start:start+show_number], preds[start:start+show_number], confidence_score[start:start+show_number]):
                     if 'Attn' in opt.Prediction:
                         gt = gt[:gt.find('[s]')]

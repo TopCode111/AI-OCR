@@ -1,0 +1,48 @@
+[10/30] Train loss: 594.32153, Valid loss: 365.22366, Elapsed_time: 22.34880
+Current_accuracy : 50.000, Current_norm_ED  : 0.5000
+Best_accuracy    : 50.000, Best_norm_ED     : 0.5000
+[10/30] Train loss: 220.93144, Valid loss: 2.82274, Elapsed_time: 19.82268
+Current_accuracy : 50.000, Current_norm_ED  : 0.5000
+Best_accuracy    : 50.000, Best_norm_ED     : 0.5000
+[10/30] Train loss: 254.54071, Valid loss: 4.53684, Elapsed_time: 20.66623
+Current_accuracy : 0.000, Current_norm_ED  : 0.0000
+Best_accuracy    : 0.000, Best_norm_ED     : 0.0000
+[10/30] Train loss: 176.44362, Valid loss: 2.08650, Elapsed_time: 20.48282
+Current_accuracy : 50.000, Current_norm_ED  : 0.5000
+Best_accuracy    : 50.000, Best_norm_ED     : 0.5000
+[10/30] Train loss: 219.66766, Valid loss: 3.84111, Elapsed_time: 20.32040
+Current_accuracy : 50.000, Current_norm_ED  : 0.5000
+Best_accuracy    : 50.000, Best_norm_ED     : 0.5000
+[10/30] Train loss: 340.92029, Valid loss: 20.77135, Elapsed_time: 22.28727
+Current_accuracy : 0.000, Current_norm_ED  : 0.0000
+Best_accuracy    : 0.000, Best_norm_ED     : 0.0000
+[10/30] Train loss: 160.27986, Valid loss: 3.77884, Elapsed_time: 21.82054
+Current_accuracy : 0.000, Current_norm_ED  : 0.0000
+Best_accuracy    : 0.000, Best_norm_ED     : 0.0000
+[10/30] Train loss: 271.09055, Valid loss: 3.82240, Elapsed_time: 26.76871
+Current_accuracy : 0.000, Current_norm_ED  : 0.0000
+Best_accuracy    : 0.000, Best_norm_ED     : 0.0000
+--------------------------------------------------------------------------------
+Ground Truth              | Prediction                | Confidence Score & T/F
+--------------------------------------------------------------------------------
+ハ                         |                           | 0.4979	False
+渥                         |                           | 0.4967	False
+--------------------------------------------------------------------------------
+[20/30] Train loss: 1.78215, Valid loss: 1.29333, Elapsed_time: 50.07070
+Current_accuracy : 50.000, Current_norm_ED  : 0.5000
+Best_accuracy    : 50.000, Best_norm_ED     : 0.5000
+--------------------------------------------------------------------------------
+Ground Truth              | Prediction                | Confidence Score & T/F
+--------------------------------------------------------------------------------
+渥                         | 渥                         | 0.8428	True
+ハ                         | 渥                         | 0.8428	False
+--------------------------------------------------------------------------------
+[30/30] Train loss: 1.32218, Valid loss: 1.20621, Elapsed_time: 74.55072
+Current_accuracy : 50.000, Current_norm_ED  : 0.5000
+Best_accuracy    : 50.000, Best_norm_ED     : 0.5000
+--------------------------------------------------------------------------------
+Ground Truth              | Prediction                | Confidence Score & T/F
+--------------------------------------------------------------------------------
+ハ                         | 渥                         | 0.8550	False
+渥                         | 渥                         | 0.8549	True
+--------------------------------------------------------------------------------
