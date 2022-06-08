@@ -5,11 +5,11 @@ experiment_name: 'ja_filtered'
 train_data: 'all_data'
 valid_data: 'all_data/ja_val'
 manualSeed: 1111
-workers: 0
-batch_size: 3 #32
-prefetch_factor: 2  #512
-num_iter: 30
-valInterval: 10
+workers: 6
+batch_size: 32 #32
+prefetch_factor: 512  #512
+num_iter: 300000
+valInterval: 100000
 saved_model: '' #'saved_models/en_filtered/iter_300000.pth'
 FT: False
 optim: False # default is Adadelta
